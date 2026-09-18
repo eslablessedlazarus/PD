@@ -1,4 +1,3 @@
-Here is a updated README tailored for your GitHub repository. It clearly outlines the codebase structure, documents how to customize the actual information/images, and provides full technical instructions for developers cloning or maintaining the project.
 
 ---
 
