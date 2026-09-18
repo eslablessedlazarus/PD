@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRIME DELUXE | Est. 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <img src="assets/logo.jpeg" alt="Prime Deluxe logo" class="brand-mark">
+        <span class="brand-wordmark">
+          <span class="logo-text">PRIME DELUXE</span>
+          <span class="sub-text">EST. 2026</span>
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="#collections">Collections</a>
+        <a href="#story">Our Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#ceo">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="cart-btn" class="cart-icon">Bag (<span id="cart-count">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge gold-badge">New Arrival</span>
+      <h1 class="hero-title">TIMELESS. DELIBERATE. PRIME.</h1>
+      <p class="hero-subtitle">Discover the essence of refined elegance with our latest collection.</p>
+      <a href="#collections" class="btn btn-primary">Explore Collection</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRODUCT PLACEHOLDERS
+       Each .product-card carries data-attributes read by script.js
+       to build the cart. Swap the image src, name, and price, and
+       keep the data-id unique per product.
+       ============================================================ -->
+  <section id="collections" class="products-section">
+    <span class="eyebrow center">THE COLLECTION</span>
+    <h2 class="section-title">CURATED ESSENTIALS</h2>
+    <p class="section-subtitle">Explore our thoughtfully curated selection of timeless pieces.</p>
+
+    <div class="product-grid">
+
+      <article class="product-card" data-id="pd-item-001" data-name="Prime Deluxe Signature Piece" data-price="180.00">
+        <div class="product-image">
+          <span class="badge gold-badge">Exclusive</span>
+          <img src="assets/images/PD_girl.jfif" alt="A young woman wearing the Prime Deluxe Signature Piece, representing the brand's commitment to timeless elegance">
+        </div>
+        <div class="product-info">
+          <h3>Prime Deluxe Signature Piece</h3>
+          <p class="product-desc">A timeless sweatshirt addition to your wardrobe, crafted with the finest materials and attention to detail.</p>
+          <p class="price">$180.00</p>
+          <button class="btn btn-secondary add-to-cart-btn">Add to Bag</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="pd-item-002" data-name="Prime Deluxe Reserve Piece" data-price="260.00">
+        <div class="product-image">
+          <span class="badge wine-badge">Limited</span>
+          <img src="assets/images/PD_guy.jfif" alt="A young man wearing the Prime Deluxe Reserve Piece, representing the brand's commitment to timeless elegance">
+        </div>
+        <div class="product-info">
+          <h3>Prime Deluxe Reserve Piece</h3>
+          <p class="product-desc">A luxurious addition to your collection, designed for those who appreciate the finer things in life.</p>
+          <p class="price">$260.00</p>
+          <button class="btn btn-secondary add-to-cart-btn">Add to Bag</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="pd-item-003" data-name="Prime Deluxe Essential Piece" data-price="95.00">
+        <div class="product-image">
+          <img src="assets/images/PD3.jfif" alt="A young woman wearing the Prime DDeluxe white hoodie, representing the brand's commitment to timeless elegance">
+        </div>
+        <div class="product-info">
+          <h3>Prime Deluxe Essential Piece</h3>
+          <p class="product-desc">A versatile and comfortable addition to your everyday wardrobe, perfect for those who value quality and style.</p>
+          <p class="price">$95.00</p>
+          <button class="btn btn-secondary add-to-cart-btn">Add to Bag</button>
+        </div>
+      </article>
+
+      <article class="product-card sold-out" data-id="pd-item-004" data-name="Prime Deluxe Heritage Piece" data-price="320.00">
+        <div class="product-image">
+          <span class="badge muted-badge">Sold Out</span>
+          <img src="assets/images/PD4.jfif" alt="A young man wearing the Prime Deluxe Heritage Jacket, representing the brand's commitment to timeless elegance ">
+        </div>
+        <div class="product-info">
+          <h3>Prime Deluxe Heritage Piece</h3>
+          <p class="product-desc">A timeless addition to your collection, designed for those who appreciate the finer things in life.</p>
+          <p class="price">$320.00</p>
+          <button class="btn btn-secondary add-to-cart-btn" disabled>Notify Me</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       OUR STORY
+       ============================================================ -->
+  <section id="story" class="story-section">
+    <div class="story-container">
+      <div class="story-image-wrapper">
+        <img src="assets/images/PD_exterior.jfif" alt="Exterior of the Prime Deluxe studio, representing the brand's commitment to timeless elegance" class="story-image">
+      </div>
+      <div class="story-content">
+        <span class="eyebrow">OUR STORY</span>
+        <h2 class="story-title">The Art of Timeless Elegance</h2>
+        <p class="story-text">Founded on the principle that true luxury lies in the details, Prime Deluxe has been crafting exceptional pieces that embody timeless elegance and modern sophistication.</p>
+        <ul class="story-stats">
+          <li><strong>[5]</strong><span>Years of Excellence</span></li>
+          <li><strong>[10+]</strong><span>Global Recognition</span></li>
+          <li><strong>[95%]</strong><span>Customer Satisfaction</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY / LOOKBOOK
+       Mixed landscape and portrait photos in a masonry layout — just
+       drop images in, no need to match a fixed aspect ratio. Replace
+       each src and alt text, and add or remove <figure> items freely.
+       ============================================================ -->
+  <section id="gallery" class="gallery-section">
+    <span class="eyebrow center">LOOKBOOK</span>
+    <h2 class="section-title">IN FRAME</h2>
+    <p class="section-subtitle">Discover the perfect blend of style and sophistication in our latest lookbook.</p>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <img src="assets/images/PD_group_IMG.jpeg" alt="[Placeholder: landscape photo 1]">
+      </figure>
+      <figure class="gallery-item">
+        <img src="assets/images/PD_group_IMG_2.jpeg" alt="[Placeholder: portrait photo 1]">
+      </figure>
+      <figure class="gallery-item">
+        <img src="assets/images/PD_group_IMG3.jpeg" alt="[Placeholder: portrait photo 2]">
+      </figure>
+      <figure class="gallery-item">
+        <img src="assets/images/PD-limited.jfif" alt="[Placeholder: landscape photo 2]">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CEO SECTION
+       ============================================================ -->
+  <section id="ceo" class="ceo-section">
+    <div class="ceo-container">
+      <div class="ceo-image-wrapper">
+        <img src="assets/images/Peculiar-2.jpeg" alt="CEO Portrait" class="ceo-image">
+      </div>
+      <div class="ceo-content">
+        <span class="ceo-label">LEADERSHIP &amp; VISION</span>
+        <h2 class="ceo-name">Peculiar Abokondu</h2>
+        <p class="ceo-title">Founder &amp; Creative Director</p>
+        <blockquote class="ceo-quote">Alongside Divine Amedu, We channel the unfiltered pulse of the streets into unyielding high-fashion artistry. Prime Deluxe doesn't cater to mainstream trends; we forge iconic pieces for those who stand apart. </blockquote>
+        <p class="ceo-bio">Hailing from Abuja, Nigeria, Peculiar Abokondu and Divine Amedu are the visionary founders behind Prime Deluxe. With a background in both streetwear and high fashion, they bring a unique perspective to the brand's creative direction.</p>
+        <div class="ceo-signature">
+          <span class="signature-name">Peculiar Abokondu &amp; Divine Amedu </span>
+        </div>
+        <div class="ceo-socials">
+          <a href="#" aria-label="CEO Instagram">Instagram</a>
+          <a href="#" aria-label="CEO LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT FORM
+       Placeholder submit handler in script.js — wire it to your
+       backend / form service (Formspree, your own API, etc.) when
+       you're ready.
+       ============================================================ -->
+  <section id="contact" class="contact-section">
+    <span class="eyebrow center">GET IN TOUCH</span>
+    <h2 class="section-title">CONTACT US</h2>
+    <p class="section-subtitle">Have questions or want to learn more? We'd love to hear from you!</p>
+
+    <div class="contact-container">
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" name="subject" placeholder="[Placeholder: e.g. Wholesale inquiry]">
+        </div>
+        <div class="form-field">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="contact-status" class="contact-status" role="status"></p>
+      </form>
+
+      <div class="contact-details">
+        <div class="contact-detail-item">
+          <h4>Email</h4>
+          <p>hello@primedeluxe.com</p>
+        </div>
+        <div class="contact-detail-item">
+          <h4>Phone</h4>
+          <p>+1 (000) 000-0000</p>
+        </div>
+        <div class="contact-detail-item">
+          <h4>Studio</h4>
+          <p>Gana Street<br>Maitama, Abuja</p>
+        </div>
+        <div class="contact-detail-item">
+          <h4>Follow</h4>
+          <p><a href="#">Instagram</a> &middot; <a href="#">TikTok</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CART DRAWER (payment-ready)
+       See PAYMENT_CONFIG in script.js to connect a real provider.
+       ============================================================ -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <h3>Your Bag</h3>
+      <button id="cart-close-btn" class="cart-close-btn" aria-label="Close cart">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <!-- Cart line items injected here by script.js -->
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">$0.00</span>
+      </div>
+      <p class="cart-note">Shipping and taxes calculated at checkout.</p>
+      <button id="checkout-btn" class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+      <p class="payment-placeholder-note">[Placeholder: payment provider not yet connected — see PAYMENT_CONFIG in script.js]</p>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="assets/logo.jpeg" alt="Prime Deluxe logo" class="footer-logo">
+        <p>Where style meets sophistication.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="#collections">Collections</a>
+          <a href="#story">Our Story</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#ceo">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Shipping &amp; Returns</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copyright">&copy; 2026 PRIME DELUXE. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
