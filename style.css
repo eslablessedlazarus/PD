@@ -438,77 +438,85 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ==========================================================================
-   CEO SECTION
+   LEADERSHIP SECTION (CEO + Co-Founder, or more)
+   .leadership-grid wraps as many .leader-card items as you add — two
+   sit side by side on desktop and stack on mobile.
    ========================================================================== */
 
-.ceo-section { padding: 6rem 2rem; }
-
-.ceo-container {
-  max-width: 1100px;
+.leadership-section {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 3.5rem;
+}
+
+.leader-card {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
-  gap: 4rem;
-  align-items: center;
+  gap: 1.75rem;
+  align-items: start;
 }
 
-.ceo-image-wrapper img { border: 1px solid var(--border-subtle); }
+.leader-image-wrapper img { border: 1px solid var(--border-subtle); }
 
-.ceo-label {
-  display: block;
-  font-size: 0.72rem;
-  letter-spacing: 3px;
-  color: var(--accent-gold-dark);
-  margin-bottom: 1rem;
-}
-
-.ceo-name {
+.leader-name {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 0.3rem;
 }
 
-.ceo-title {
+.leader-title {
   color: var(--text-muted);
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
   letter-spacing: 0.5px;
 }
 
-.ceo-quote {
+.leader-quote {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.5;
   border-left: 2px solid var(--accent-gold);
-  padding-left: 1.25rem;
-  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  margin-bottom: 1.25rem;
 }
 
-.ceo-bio {
+.leader-bio {
   color: var(--text-muted);
   font-weight: 300;
-  margin-bottom: 1.5rem;
-  max-width: 65ch;
+  font-size: 0.92rem;
+  margin-bottom: 1.25rem;
 }
 
-.ceo-signature {
+.leader-signature {
   font-family: var(--font-heading);
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.85rem;
   color: var(--accent-gold-dark);
 }
 
-.ceo-socials a {
-  margin-right: 1.5rem;
-  font-size: 0.8rem;
+.leader-socials a {
+  margin-right: 1.25rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 
-.ceo-socials a:hover { color: var(--accent-gold-dark); }
+.leader-socials a:hover { color: var(--accent-gold-dark); }
+
+@media (max-width: 560px) {
+  .leader-card {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ==========================================================================
    CONTACT
@@ -804,7 +812,6 @@ a { text-decoration: none; color: inherit; }
 
 @media (max-width: 860px) {
   .nav-links { display: none; }
-  .ceo-container,
   .story-container,
   .contact-container,
   .form-row {
